@@ -1,7 +1,16 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react' // O @vitejs/plugin-vue si usas Vue
+import path from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tailwindcss()
+  ],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'), // <-- Esto le enseña a Vite que @ significa la carpeta src
+    },
+  },
 })
