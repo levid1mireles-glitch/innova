@@ -42,8 +42,8 @@ export function Contact() {
             Soluciones completas, no solo piezas
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
-            En Innova, no solo le vendemos un servicio o una pieza: le ofrecemos soluciones
-            completas que impulsan la confiabilidad y el rendimiento de su operación.
+            EN INNOVA, NO SOLO LE VENDEMOS UN SERVICIO OUNA PIEZA: LE OFRECEMOS SOLUCIONES COMPLETAS,
+            RESPALDO TÉCNICO Y LA SEGURIDAD DE QUE SUS EQUIPOS Y PROCESOS ESTARÁN SIEMPRE EN LAS MEJORES MANOS
           </p>
         </div>
 
@@ -76,30 +76,6 @@ export function Contact() {
               ))}
             </div>
           </div>
-
-         {/* <form onSubmit={onSubmit} className="space-y-5 rounded-lg border border-border/50 bg-card p-6 md:p-8">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div className="space-y-2">
-                <Label htmlFor="name">Nombre</Label>
-                <Input id="name" required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Tu nombre" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="company">Empresa</Label>
-                <Input id="company" required value={form.company} onChange={(e) => setForm({ ...form, company: e.target.value })} placeholder="Tu empresa" />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="service">Servicio de interés</Label>
-              <Input id="service" required value={form.service} onChange={(e) => setForm({ ...form, service: e.target.value })} placeholder="Ej. Torno CNC, prototipos…" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="message">Mensaje</Label>
-              <Textarea id="message" required rows={5} value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Cuéntanos sobre tu proyecto" />
-            </div>
-            <Button type="submit" size="lg" className="w-full gap-2" disabled={sending}>
-              {sending ? "Enviando…" : (<><Send className="h-4 w-4" /> Enviar por WhatsApp</>)}
-            </Button>
-          </form>*/}
         </div>
       </div>
     </section>

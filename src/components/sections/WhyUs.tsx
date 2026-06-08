@@ -3,12 +3,12 @@ import { Award, GraduationCap, Boxes, Clock, Headphones, Repeat, type LucideIcon
 interface Feature { icon: LucideIcon; title: string; desc: string }
 
 const features: Feature[] = [
-  { icon: Award, title: "Precisión y calidad garantizada", desc: "Tolerancias críticas verificadas con instrumentos certificados." },
-  { icon: GraduationCap, title: "Experiencia y conocimiento", desc: "Equipo técnico con trayectoria comprobada en la industria." },
-  { icon: Boxes, title: "Versatilidad en materiales", desc: "Acero, aluminio, bronce y plásticos técnicos." },
-  { icon: Clock, title: "Puntualidad garantizada", desc: "Cumplimos los plazos acordados sin comprometer la calidad." },
-  { icon: Headphones, title: "Atención y asesoría", desc: "Acompañamiento técnico desde la cotización hasta la entrega." },
-  { icon: Repeat, title: "Precisión en serie", desc: "Producción repetible para volúmenes pequeños y medianos." },
+  { icon: Award, title: "Precisión y calidad garantizada", desc: "Contamos con tecnología de control numérico y control de calidad lo que nos permite fabricar piezas con medidas y especificaciones solicitadas." },
+  { icon: GraduationCap, title: "Experiencia y conocimiento", desc: "Nuestro equipo esta conformado por profesionales, capaces de resolver y ofrecer soluciones eficientes." },
+  { icon: Boxes, title: "Versatilidad en materiales", desc: "Nos adaptamos a tus necesidades. Acero, aluminio, bronce y plásticos técnicos." },
+  { icon: Clock, title: "Puntualidad garantizada", desc: "Respetamos lo tiempos de entrega, asegurando que sus compromisos nunca se detengan, siempre con la mas alta calidad." },
+  { icon: Headphones, title: "Atención y asesoría", desc: "Brindamos acompañamiento técnico desde el primer día para optimizar sus costos y lograr resultados exactos." },
+  { icon: Repeat, title: "Precisión en serie", desc: "Garantizamos uniformidad absoluta en grandes volúmenes de producción, cada piza es exactamente igual a la anterior en calidad y acabado." },
 ];
 
 export function WhyUs() {
@@ -19,7 +19,8 @@ export function WhyUs() {
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Diferenciadores</p>
           <h2 className="mt-3 text-3xl font-bold text-foreground md:text-4xl">¿Por qué elegirnos?</h2>
           <p className="mt-4 text-muted-foreground">
-            Seis razones por las que empresas líderes confían su manufactura en Innova.
+            En Innova Precision entendemos que la calidad, la exactitud y la confianza son factores determinantes para el éxito. Por ello
+            ofrecemos un servicio que marque la diferencia con:
           </p>
         </div>
 

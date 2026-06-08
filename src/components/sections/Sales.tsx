@@ -8,15 +8,15 @@ interface Product {
   title: string; 
   desc: string; 
   icon: LucideIcon;
-  imageName: string; // <-- Propiedad para asociar el archivo
+  imageName: string; 
 }
 
 // 3. Asignamos los nombres de los archivos correspondientes para cada producto
 const products: Product[] = [
-  { title: "Herramientas de corte, medición y precisión", desc: "Insertos, brocas, calibradores y micrómetros.", icon: Wrench, imageName: "herramientas_corte.jpg" },
-  { title: "Herramientas de ferretería en general", desc: "Equipamiento confiable para taller e industria.", icon: Hammer, imageName: "ferreteria.jpg" },
+  { title: "Herramientas de corte, medición y precisión", desc: "Insertos, brocas, calibradores y micrómetros.", icon: Wrench, imageName: "herramientas_corte.png" },
+  { title: "Herramientas de ferretería en general", desc: "Equipamiento confiable para taller e industria.", icon: Hammer, imageName: "ferreteria.png" },
   { title: "Tornillería, accesorios y componentes mecánicos", desc: "Pernos, tuercas, rodamientos y fijaciones.", icon: Bolt, imageName: "tornilleria.jpg" },
-  { title: "Adhesivos, selladores y productos químicos", desc: "Soluciones para ensamble, sellado y mantenimiento.", icon: FlaskConical, imageName: "quimicos.jpg" },
+  { title: "Adhesivos, selladores y productos químicos", desc: "Soluciones para ensamble, sellado y mantenimiento.", icon: FlaskConical, imageName: "selladores.jpg" },
   { title: "Refacciones estándar o a la medida", desc: "Stock disponible o fabricación bajo plano.", icon: Replace, imageName: "refacciones.jpg" },
   { title: "Materiales en bruto o procesados", desc: "Acero, aluminio, bronce y plásticos técnicos.", icon: Package, imageName: "materiales_bruto.jpg" },
 ];

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 // 1. Cargamos de forma dinámica e inmediata todas las imágenes de la carpeta assets.
 // El fragmento { eager: true } asegura que se importen en el momento del renderizado,
 // idéntico a hacer un 'import' estático manual por cada una.
+
 const assetFiles = import.meta.glob<{ default: string }>("@/assets/*.{png,jpg,jpeg,webp}", { eager: true });
 
 interface ServiceItem { 
@@ -13,18 +14,18 @@ interface ServiceItem {
   desc: string; 
   icon: LucideIcon; 
   tag: "servicio" | "maquina";
-  imageName: string; // <-- Guardamos el nombre exacto del archivo aquí
+  imageName: string;
 }
 
 const items: ServiceItem[] = [
-  { id: "serie", title: "Fabricación y Producción en Serie", desc: "Líneas de producción optimizadas para volúmenes consistentes y repetibles.", icon: Factory, tag: "servicio", imageName: "prodSerie.jpeg" },
-  { id: "cnc", title: "Maquinado CNC de Alta Precisión", desc: "Fresado y torneado con tolerancias críticas en una sola operación.", icon: Cog, tag: "servicio", imageName: "altPresicion.jpeg" },
-  { id: "proto", title: "Desarrollo de Prototipos e Ingeniería", desc: "Del plano 3D al prototipo funcional con asesoría técnica integral.", icon: PenTool, tag: "servicio", imageName: "ProtIng.jpeg" },
-  { id: "torno", title: "Torno CNC", desc: "Alta precisión, velocidad y acabados superiores.", icon: Disc3, tag: "maquina", imageName: "torno.jpeg" },
-  { id: "laser", title: "Cortadora Láser", desc: "Cortes limpios, detallados y eficientes.", icon: Scissors, tag: "maquina", imageName: "cortadora.jpeg" },
-  { id: "sold", title: "Soldadura Sanitaria Láser", desc: "Acabados impecables e higiénicos.", icon: Flame, tag: "maquina", imageName: "soldadura.jpeg" },
-  { id: "electro", title: "Electro erosionadora", desc: "Componentes complejos en materiales de alta dureza.", icon: Zap, tag: "maquina", imageName: "electro.jpeg" },
-  { id: "punz", title: "Electro punzado", desc: "Procesos exactos y consistentes.", icon: CircleDot, tag: "maquina", imageName: "ElectroPunzado.jpeg" },
+  { id: "serie", title: "Fabricación y Producción en Serie", desc: "Especialistas en la elaboración de componentes con estricto cumplimiento de especificaciones. Trabajamos con una amplia gama de materiales: Acero Inoxidable: En grados 220, 304, 316, 410, 420 y 443. Otros Materiales: Acero al carbón, aluminio, bronce y plásticos técnicos.", icon: Factory, tag: "servicio", imageName: "prodSerie.jpeg" },
+  { id: "cnc", title: "Maquinado CNC de Alta Precisión", desc: "Realizamos procesos de fresado, torneado, rectificado y perforado. Garantizamos medidas exactas y acabados impecables en cada pieza, desde el desarrollo de un prototipo funcional hasta producciones masivas.", icon: Cog, tag: "servicio", imageName: "altPresicion.jpeg" },
+  { id: "proto", title: "Desarrollo de Prototipos e Ingeniería", desc: "Convertimos sus planos y diseños en piezas reales. Optimizamos procesos y materiales desde la etapa inicial para reducir costos y tiempos antes de la producción definitiva.", icon: PenTool, tag: "servicio", imageName: "ProtIng.jpeg" },
+  { id: "torno", title: "Torno CNC", desc: "Contamos con torno CNC de alta precisión para la fabricación de piezas industriales con exactitud, rapidez y acabados de calidad superior ", icon: Disc3, tag: "maquina", imageName: "torno.jpeg" },
+  { id: "laser", title: "Cortadora Láser", desc: "Realizamos cortes láser precisos en distintos materiales, garantizando acabados limpios, detallados y eficientes para proyectos industriales y personalizados.", icon: Scissors, tag: "maquina", imageName: "cortadora.jpeg" },
+  { id: "sold", title: "Soldadura Sanitaria Láser", desc: "Realizamos soldadura sanitaria láser con acabados impecables, resistentes  e higiénicos, ideales para industrias que requieren altos estándares de seguridad y confianza.", icon: Flame, tag: "maquina", imageName: "soldadura.jpeg" },
+  { id: "electro", title: "Electro erosionadora", desc: "Contamos con tecnología de electroerosión para fabricar componentes complejos con máxima precisión, incluso en materiales de alta dureza.", icon: Zap, tag: "maquina", imageName: "electro.jpeg" },
+  { id: "punz", title: "Electro punzado", desc: "Ofrecemos servicio de electro punzado con procesos exactos y consistentes, asegurando resultados resistentes, funcionales y de excelente calidad ", icon: CircleDot, tag: "maquina", imageName: "ElectroPunzado.jpeg" },
 ];
 
 type Filter = "todos" | "servicio" | "maquina";
@@ -55,7 +56,8 @@ export function Services() {
             Servicios y Capacidades Industriales
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Tecnología, maquinaria y conocimiento al servicio de su proyecto.
+            En Innova Precision CNC ofrecemos soluciones integrales de fabricación industrial, combinando experiencia técnica con maquinaria de alta
+            precisión para entregar componentes confiables.
           </p>
         </div>
         <div className="flex gap-2 rounded-lg border border-border/50 bg-card p-1">

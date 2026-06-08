@@ -3,9 +3,9 @@ import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import nosotros from "@/assets/nosotros.png";
 
 const values = [
-  { icon: Target, title: "Misión", text: "Brindar soluciones de mecanizado CNC de alta precisión, transformando ideas y materiales en componentes industriales confiables que impulsen la productividad de nuestros clientes." },
-  { icon: Eye, title: "Visión", text: "Consolidarnos como referente nacional en manufactura CNC e ingeniería aplicada, reconocidos por la excelencia técnica y la cercanía con cada cliente." },
-  { icon: Heart, title: "Valores", text: "Compromiso, Integridad y Excelencia en cada proceso, pieza y relación que construimos." },
+  { icon: Target, title: "Misión", text: "Fabricar piezas de alta precisión con tecnología avanzada y calidad garantizada, brindando soluciones confiables y oportunas, satisfaciendo los requerimientos técnicos y operativos de nuestros clientes." },
+  { icon: Eye, title: "Visión", text: "Ser la empresa líder en el sector por nuestra innovación, excelencia y capacidad de adaptación a los retos de la industria y generar valor sostenido al proporcionar soluciones de maquinados en la región." },
+  { icon: Heart, title: "Valores", text: "Compromiso: Responsabilidad con acuerdos y plazos. Integridad: Ética y transparencia en nuestras acciones. Excelencia: Búsqueda permanente de resultados óptimos" },
 ];
 
 export function About() {
@@ -23,9 +23,10 @@ export function About() {
             Perfil Corporativo
           </h2>
           <p className="mt-4 text-muted-foreground">
-            En Innova combinamos décadas de experiencia con tecnología de vanguardia para
-            entregar piezas industriales que cumplen las tolerancias más exigentes del
-            mercado.
+            Somos especialistas en maquinado CNC y fabricación de componentes industriales de alta precisión. Transformamos acero, aluminio, bronce y plásticos técnicos en piezas de
+            alto rendimiento bajo los estándares más exigentes del mercado. Combinamos tecnología moderna con la experiencia de nuestro equipo para entender sus necesidades y entregarle
+            resultados exactos y eficientes. Nos especializamos en diseños de alta complejidad y tolerancias estrictas, garantizando acabados impecables y uniformidad técnica en cada entrega.
+            Nos consolidamos como su socio estratégico en la transformación de materiales, donde la calidad, la precisión y la confianza son nuestra firma en cada proyecto.
           </p>
           <div className="mt-8 space-y-5">
             {values.map((v) => (

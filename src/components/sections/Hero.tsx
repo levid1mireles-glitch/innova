@@ -32,13 +32,9 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href="https://wa.me/527227415404" target="_blank" rel="noreferrer">
-              <Button size="lg" className="gap-2">
-                Contactar a un Asesor <ArrowRight className="h-4 w-4" />
-              </Button>
+
             </a>
-            <a href="#servicios">
-              <Button size="lg" variant="outline">Ver Servicios</Button>
-            </a>
+
           </div>
         </div>
 

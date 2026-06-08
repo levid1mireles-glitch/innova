@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 
 const links = [
   { href: "#nosotros", label: "Nosotros" },
-  { href: "#por-que", label: "¿Por qué?" },
+  { href: "#por-que", label: "¿Por qué elegirnos?" },
   { href: "#servicios", label: "Servicios" },
   { href: "#proceso", label: "Proceso" },
   { href: "#ventas", label: "Ventas" },
   { href: "#contacto", label: "Contacto" },
+  { href: "#nuestros_trabajos", label: "Nuestros Trabajos" },
 ];
 
 export function Navbar() {
@@ -34,10 +35,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a href="https://wa.me/527227415404" target="_blank" rel="noreferrer" className="hidden md:block">
-          <Button size="sm">Contactar</Button>
-        </a>
-
         <button
           onClick={() => setOpen(!open)}
           className="rounded-md border border-border/60 p-2 md:hidden"
@@ -60,9 +57,7 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-            <a href="https://wa.me/527227415404" target="_blank" rel="noreferrer" className="mt-2">
-              <Button className="w-full">Contactar a un Asesor</Button>
-            </a>
+
           </nav>
         </div>
       )}

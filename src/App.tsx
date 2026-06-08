@@ -9,6 +9,7 @@ import { Contact } from './components/sections/Contact'
 import { Footer } from './components/Footer'
 import { Toaster } from './components/ui/sonner'
 import { Navbar } from './components/Navbar'
+import { Ourjobs } from './components/sections/Ourjobs'
 import './styles.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Services />
         <Workflow />
         <Sales />
+        <Ourjobs/>
         <Contact />
       </main>
       <Footer />

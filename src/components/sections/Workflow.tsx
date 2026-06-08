@@ -17,10 +17,10 @@ interface Step {
 
 // 3. Asignamos los nombres de los archivos correspondientes (ajusta las extensiones si cambian)
 const steps: Step[] = [
-  { id: 1, title: "Materiales", icon: Boxes, desc: "Selección estratégica y análisis de propiedades.", bullets: ["Análisis de dureza", "Compatibilidad de uso", "Trazabilidad de origen"], imageName: "torno.jpeg" },
-  { id: 2, title: "Dibujo / Diseño", icon: Ruler, desc: "Modelado y planos con precisión dimensional.", bullets: ["Modelado en Solidworks", "Validación dimensional", "Optimización para CNC"], imageName: "diseno.jpg" },
-  { id: 3, title: "Mecanizado", icon: Cog, desc: "Manufactura con maquinaria calibrada.", bullets: ["Herramientas de corte", "Calibración de máquina", "Control de proceso"], imageName: "mecanizado.jpg" },
-  { id: 4, title: "Verificación", icon: ClipboardCheck, desc: "Inspección y certificación final.", bullets: ["Instrumentos certificados", "Reporte dimensional", "Liberación de pieza"], imageName: "verificacion.jpg" },
+  { id: 1, title: "Materiales", icon: Boxes, desc: "Selección estratégica y análisis de propiedades.", bullets: ["Análisis de dureza", "Compatibilidad de uso", "Trazabilidad de origen"], imageName: "materiales.jpeg" },
+  { id: 2, title: "Dibujo / Diseño", icon: Ruler, desc: "Modelado y planos con precisión dimensional.", bullets: ["Modelado en Solidworks", "Validación dimensional", "Optimización para CNC"], imageName: "dibujo.jpeg" },
+  { id: 3, title: "Mecanizado", icon: Cog, desc: "Manufactura con maquinaria calibrada.", bullets: ["Herramientas de corte", "Calibración de máquina", "Control de proceso"], imageName: "mecanizado.jpeg" },
+  { id: 4, title: "Verificación", icon: ClipboardCheck, desc: "Inspección y certificación final.", bullets: ["Instrumentos certificados", "Reporte dimensional", "Liberación de pieza"], imageName: "verificacion.jpeg" },
 ];
 
 export function Workflow() {
@@ -39,10 +39,13 @@ export function Workflow() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Proceso</p>
           <h2 className="mt-3 text-3xl font-bold text-foreground md:text-4xl">
-            Mantenimiento Preventivo y Correctivo
+            Mantenimiento Preventivo y Correctivo Industrial
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Un flujo de trabajo riguroso garantiza piezas confiables, una a una.
+            Innova Precisión, ofrece servicios de mantenimiento industrial especializado enfocado en la prevención, reparación, ajuste y optimización de equipos industriales.
+            El objetivo del servicio es garantizar el correcto funcionamiento de los equipos, reducir tiempos de paro, aumentar la disponibilidad de sus activos y mantener la eficiencia operativa en sus
+            procesos, mediante el diagnostico, desmontaje, fabricación o reparación de las piezas mecánicas, rectificado, barrenado, torneado, fresado y ajustes dimensional conforme a
+            especificaciones técnicas del fabricante.
           </p>
         </div>
 
