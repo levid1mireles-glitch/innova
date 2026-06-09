@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle"; // ◄ Importamos tu botón de tema
 
 const links = [
   { href: "#nosotros", label: "Nosotros" },
@@ -27,23 +28,36 @@ export function Navbar() {
           </div>
         </a>
 
-        <nav className="hidden items-center gap-7 md:flex">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              {l.label}
-            </a>
-          ))}
-        </nav>
+        {/* Desktop Menu */}
+        <div className="hidden items-center gap-7 md:flex">
+          <nav className="flex items-center gap-7">
+            {links.map((l) => (
+              <a key={l.href} href={l.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                {l.label}
+              </a>
+            ))}
+          </nav>
+          
+          <div className="border-l border-border/40 pl-4">
+            <ThemeToggle /> {/* ◄ Botón visible en escritorio */}
+          </div>
+        </div>
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="rounded-md border border-border/60 p-2 md:hidden"
-          aria-label="Menu"
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle /> {/* ◄ Botón visible en móvil fuera del menú para acceso rápido */}
+          
+          <button
+            onClick={() => setOpen(!open)}
+            className="rounded-md border border-border/60 p-2"
+            aria-label="Menu"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
+      {/* Mobile Menu */}
       {open && (
         <div className="border-t border-border/40 bg-background md:hidden">
           <nav className="container mx-auto flex flex-col gap-1 px-4 py-4">
@@ -57,7 +71,6 @@ export function Navbar() {
                 {l.label}
               </a>
             ))}
-
           </nav>
         </div>
       )}

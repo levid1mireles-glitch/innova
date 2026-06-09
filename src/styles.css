@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700&family=Space+Grotesk:wght=500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @source "../src";
 
 @custom-variant dark (&:is(.dark *));
-
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -34,12 +33,6 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -50,8 +43,63 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+/* TEMA CLARO */
 :root {
   --radius: 0.5rem;
+  
+  /* Fondos y Textos con matiz Azul-Gris Gélido */
+  --background: hsl(220 9% 88%); /* Fondo ligeramente más profundo para dar contraste */
+  --foreground: hsl(222 47% 12%); /* Azul marino muy oscuro y nítido */
+  
+  --card: hsl(0 0% 100%); /* Las tarjetas blancas resaltarán fuertemente sobre el fondo */
+  --card-foreground: hsl(222 47% 12%);
+  
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(222 47% 12%);
+  
+  /* Primario: Azul Cobalto Industrial profundo */
+  --primary: hsl(221 68% 23%); 
+  --primary-foreground: hsl(215 20% 98%);
+  
+  /* Secundarios y Elementos Desactivados */
+  --secondary: hsl(217 30% 88%); 
+  --secondary-foreground: hsl(221 68% 23%);
+  
+  --muted: hsl(218 25% 89%);
+  --muted-foreground: hsl(218 16% 42%); 
+  
+  --accent: hsl(217 30% 86%);
+  --accent-foreground: hsl(221 68% 23%);
+  
+  --destructive: hsl(0 84% 58%);
+  --destructive-foreground: hsl(0 0% 100%);
+  
+  /* Ajuste crucial para definir los límites y separaciones de los divs */
+  --border: hsl(221 25% 80%); /* Bordes oscurecidos para que las divisiones sean bien visibles */
+  --input: hsl(221 25% 84%);
+  --ring: hsl(221 68% 23%);
+  
+  /* Sidebar estructurado */
+  --sidebar: hsl(220 30% 92%);
+  --sidebar-foreground: hsl(222 47% 12%);
+  --sidebar-primary: hsl(221 68% 23%);
+  --sidebar-primary-foreground: hsl(215 20% 98%);
+  --sidebar-accent: hsl(217 30% 84%);
+  --sidebar-accent-foreground: hsl(221 68% 23%);
+  --sidebar-border: hsl(221 25% 78%);
+  --sidebar-ring: hsl(221 68% 23%);
+
+  /* Gradientes, sombras reforzadas para marcar límites tridimensionales */
+  --gradient-hero: linear-gradient(135deg, hsl(220 40% 96%) 0%, hsl(216 35% 88%) 100%);
+  --gradient-accent: linear-gradient(120deg, hsl(221 68% 23% / 0.06), hsl(217 30% 90% / 0.06));
+  --shadow-elevated: 0 15px 35px -10px hsl(222 47% 12% / 0.12); /* Sombra más definida para los contenedores */
+  --shadow-glow: 0 0 30px hsl(221 68% 23% / 0.06);
+  
+  --blueprint-color: hsl(221 50% 30% / 0.06);
+}
+
+/*TEMA OSCURO */
+.dark {
   --background: hsl(224 31% 10%);
   --foreground: hsl(227 27% 91%);
   --card: hsl(224 25% 15%);
@@ -71,11 +119,7 @@
   --border: hsl(0 0% 79% / 0.15);
   --input: hsl(224 25% 15%);
   --ring: hsl(225 10% 47%);
-  --chart-1: hsl(210 80% 60%);
-  --chart-2: hsl(180 60% 50%);
-  --chart-3: hsl(40 90% 60%);
-  --chart-4: hsl(280 60% 60%);
-  --chart-5: hsl(0 70% 60%);
+  
   --sidebar: hsl(224 25% 13%);
   --sidebar-foreground: hsl(227 27% 91%);
   --sidebar-primary: hsl(225 10% 47%);
@@ -84,45 +128,12 @@
   --sidebar-accent-foreground: hsl(227 27% 91%);
   --sidebar-border: hsl(0 0% 79% / 0.1);
   --sidebar-ring: hsl(225 10% 47%);
+
   --gradient-hero: linear-gradient(135deg, hsl(224 31% 10%) 0%, hsl(224 25% 15%) 60%, hsl(225 30% 22%) 100%);
   --gradient-accent: linear-gradient(120deg, hsl(225 10% 47% / 0.25), hsl(180 3% 25% / 0.25));
   --shadow-elevated: 0 20px 60px -20px hsl(0 0% 0% / 0.6);
   --shadow-glow: 0 0 40px hsl(225 30% 50% / 0.18);
-}
-
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --blueprint-color: hsl(225 20% 35% / 0.15);
 }
 
 @layer base {
@@ -135,6 +146,7 @@
     color: var(--color-foreground);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
 
   h1, h2, h3, h4 {
@@ -150,8 +162,8 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .blueprint-grid {
     background-image:
-      linear-gradient(hsl(225 20% 35% / 0.15) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(225 20% 35% / 0.15) 1px, transparent 1px);
+      linear-gradient(var(--blueprint-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--blueprint-color) 1px, transparent 1px);
     background-size: 32px 32px;
   }
 }

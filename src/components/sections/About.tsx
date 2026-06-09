@@ -14,7 +14,7 @@ export function About() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="order-2 lg:order-1">
 
-          <img src={nosotros} />
+          <img src={nosotros} className="rounded-2xl"/>
 
         </div>
         <div className="order-1 flex flex-col justify-center lg:order-2">
