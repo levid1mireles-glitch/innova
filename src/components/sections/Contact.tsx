@@ -1,9 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Phone, MessageCircle, Mail, MapPin, Send, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 
 interface ContactForm {
@@ -33,7 +30,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contacto" className="relative overflow-hidden bg-hero-gradient">
+<section id="contacto" className="relative overflow-hidden bg-hero-gradient">
       <div className="absolute inset-0 blueprint-grid opacity-20" />
       <div className="container relative mx-auto px-4 py-24 md:px-8">
         <div className="mx-auto max-w-3xl text-center">
@@ -42,13 +39,14 @@ export function Contact() {
             Soluciones completas, no solo piezas
           </h2>
           <p className="mt-4 text-muted-foreground md:text-lg">
-            EN INNOVA, NO SOLO LE VENDEMOS UN SERVICIO OUNA PIEZA: LE OFRECEMOS SOLUCIONES COMPLETAS,
+            EN INNOVA, NO SOLO LE VENDEMOS UN SERVICIO O UNA PIEZA: LE OFRECEMOS SOLUCIONES COMPLETAS,
             RESPALDO TÉCNICO Y LA SEGURIDAD DE QUE SUS EQUIPOS Y PROCESOS ESTARÁN SIEMPRE EN LAS MEJORES MANOS
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-[1fr_1.2fr]">
+        <div className="mx-auto mt-10 max-w-xl">
           <div className="space-y-4">
+            
             <div className="rounded-lg border border-border/50 bg-card p-6">
               <h3 className="text-lg font-semibold text-foreground">Habla con un asesor</h3>
               <p className="mt-2 text-sm text-muted-foreground">Respuesta rápida vía WhatsApp.</p>
@@ -58,11 +56,12 @@ export function Contact() {
                 </Button>
               </a>
             </div>
+
             <div className="grid gap-3">
               {[
                 { icon: Phone, label: "Teléfono", value: "+52 722 741 5404" },
-                { icon: Mail, label: "Correo", value: "contacto@innovacnc.mx" },
-                { icon: MapPin, label: "Ubicación", value: "Estado de México, MX" },
+                { icon: Mail, label: "Correo", value: "ventas@innova-cnc.com.mx" },
+                { icon: MapPin, label: "Ubicación", value: "Francisco Javier Mina 304 SN San Juan, San Mateo Atenco, México. C.P 52104, México" },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-4 rounded-lg border border-border/50 bg-card p-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-md bg-accent-gradient border border-border/60">
@@ -75,9 +74,11 @@ export function Contact() {
                 </div>
               ))}
             </div>
+
           </div>
         </div>
       </div>
     </section>
+    
   );
 }

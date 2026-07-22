@@ -1,6 +1,6 @@
 import { Building2, Target, Eye, Heart } from "lucide-react";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import nosotros from "@/assets/nosotros.png";
+import nosotros from "@/assets/somos.jpeg";
 
 const values = [
   { icon: Target, title: "Misión", text: "Fabricar piezas de alta precisión con tecnología avanzada y calidad garantizada, brindando soluciones confiables y oportunas, satisfaciendo los requerimientos técnicos y operativos de nuestros clientes." },
@@ -23,10 +23,8 @@ export function About() {
             Perfil Corporativo
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Somos especialistas en maquinado CNC y fabricación de componentes industriales de alta precisión. Transformamos acero, aluminio, bronce y plásticos técnicos en piezas de
-            alto rendimiento bajo los estándares más exigentes del mercado. Combinamos tecnología moderna con la experiencia de nuestro equipo para entender sus necesidades y entregarle
-            resultados exactos y eficientes. Nos especializamos en diseños de alta complejidad y tolerancias estrictas, garantizando acabados impecables y uniformidad técnica en cada entrega.
-            Nos consolidamos como su socio estratégico en la transformación de materiales, donde la calidad, la precisión y la confianza son nuestra firma en cada proyecto.
+            Especializados en maquinado CNC y componentes industriales de alta precisión. Transformamos metales y plásticos tecnicos en piezas de alto rendimiento.
+            Gracias a nuestra tecnología y experiencia, resolvemos diseños complejos con tolerancias estrictas y acabados implacables. Somos el socio estratégico que asegura la calidad y precisión que su proyecto necesita
           </p>
           <div className="mt-8 space-y-5">
             {values.map((v) => (
