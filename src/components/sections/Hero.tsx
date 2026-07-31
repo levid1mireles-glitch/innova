@@ -20,7 +20,7 @@ export function Hero() {
             <Factory className="h-3.5 w-3.5" /> CNC Machining Specialists
           </div>
           <h1 className="text-4xl font-bold leading-[1.05] text-foreground md:text-5xl lg:text-6xl">
-            Innova Precision <span className="text-muted-foreground">CNC</span>
+            Innova Precisión <span className="text-muted-foreground">CNC</span>
           </h1>
           <p className="mt-6 text-xl font-light italic text-foreground/90 md:text-2xl">
             "Conectamos tu confianza con la precisión"

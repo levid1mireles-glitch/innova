@@ -13,4 +13,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'), // <-- Esto le enseña a Vite que @ significa la carpeta src
     },
   },
+
+
 })
