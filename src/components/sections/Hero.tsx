@@ -20,10 +20,10 @@ export function Hero() {
             <Factory className="h-3.5 w-3.5" /> CNC Machining Specialists
           </div>
           <h1 className="text-4xl font-bold leading-[1.05] text-foreground md:text-5xl lg:text-6xl">
-            Innova Precisión <span className="text-muted-foreground">CNC</span>
+            Innova Precision <span className="text-muted-foreground">CNC</span>
           </h1>
           <p className="mt-6 text-xl font-light italic text-foreground/90 md:text-2xl">
-            "Conectamos tu confianza con la precision"
+            "Conectamos tu confianza con la precisión"
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Especialistas en mecanizado CNC y fabricación de componentes industriales de alta
