@@ -23,7 +23,7 @@ export function Hero() {
             Innova Precisión <span className="text-muted-foreground">CNC</span>
           </h1>
           <p className="mt-6 text-xl font-light italic text-foreground/90 md:text-2xl">
-            "Conectamos tu confianza con la precisión"
+            "Conectamos tu confianza con la precision"
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
             Especialistas en mecanizado CNC y fabricación de componentes industriales de alta
